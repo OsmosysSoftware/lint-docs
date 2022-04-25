@@ -1,5 +1,5 @@
 # Introduction
-ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+ESLint is a tool to identify and report on patterns found in ECMAScript/JavaScript code, with the goal to make code more consistent and avoid bugs.
 
 This repository will document different technology specific linting rules for ESLint.
 
@@ -7,7 +7,7 @@ At [Osmosys Software Solutions Pvt Ltd](https://osmosys.co/) we standardize the 
 
 # Technologies
 
-- [React with typescript](react-typescript-eslint.md)
+- [React with TypeScript](react-typescript-eslint.md)
 
 # TODO
 - Node.js ([Nest.js](https://github.com/nestjs/nest))
