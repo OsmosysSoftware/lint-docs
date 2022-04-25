@@ -1,6 +1,6 @@
 # Introduction
 
-ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+ESLint is a tool to identify and report on patterns found in ECMAScript/JavaScript code, with the goal to make code more consistent and avoid bugs.
 
 This repository will document different technology specific linting rules for ESLint.
 
@@ -8,9 +8,9 @@ At [Osmosys Software Solutions Pvt Ltd](https://osmosys.co/) we standardize the 
 
 # Prerequisite
 
-- React app with typescript
+- React app with TypeScript
 
-Any existing React app with typescript. If you don't have one then you can create a basic React app using the following command.
+Any existing React app with TypeScript. If you don't have one then you can create a basic React app using the following command.
 
 ```sh
 npx create-react-app my-app --template typescript
