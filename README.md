@@ -8,9 +8,9 @@ At [Osmosys Software Solutions Pvt Ltd](https://osmosys.co/) we standardize the 
 # Technologies
 
 - [React with TypeScript](react-typescript-eslint.md)
+- [Node.Js](node-nest-eslint.md)
 
 # TODO
-- Node.js ([Nest.js](https://github.com/nestjs/nest))
 - Vue.js
 - Angular
 
