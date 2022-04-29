@@ -49,6 +49,11 @@ Then add the below configuration in this file.
 <?xml version="1.0"?>
 <ruleset name="PHP_CodeSniffer">
     <file>app</file>
+    <file>config</file>
+    <file>database</file>
+    <file>resources</file>
+    <file>routes</file>
+    <file>tests</file>
 
     <!-- exclude our migrations directory from the violation check-->
     <exclude-pattern>*/migrations/*</exclude-pattern>
