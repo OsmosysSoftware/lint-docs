@@ -1,18 +1,14 @@
 # Introduction
-ESLint is a tool to identify and report on patterns found in ECMAScript/JavaScript code, with the goal to make code more consistent and avoid bugs.
+Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.
 
-This repository will document different technology specific linting rules for ESLint.
-
-At [Osmosys Software Solutions Pvt Ltd](https://osmosys.co/) we standardize the ESLint configuration, which will be used across multiple projects.
+This repository will document different technology specific linting configuration.
 
 # Technologies
 
 - [React with TypeScript](react-typescript-eslint.md)
-- [Node.Js](node-nest-eslint.md)
+- [PHP v8.1 (Laravel v8) - PHPCS](php-laravel-phpcs.md)
+- [Node.Js v16 (NestJs v8)](node-nest-eslint.md)
 
 # TODO
 - Vue.js
 - Angular
-
-
-

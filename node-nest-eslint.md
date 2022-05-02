@@ -4,7 +4,7 @@ At Osmosys all Node.js applications will be developed using [NestJs](https://nes
 
 # Prerequisite
 
-- NestJs App
+- [NestJs v8.2.5](https://docs.nestjs.com/first-steps)
 
 An existing application or new application developed using NestJs framework.
 
@@ -12,7 +12,7 @@ An existing application or new application developed using NestJs framework.
 **Install Nest CLI**
 
 ```sh
-npm i -g @nestjs/cli
+npm i -g @nestjs/cli@8.2.5
 ```
 
 **Create new project**
@@ -21,9 +21,9 @@ npm i -g @nestjs/cli
 nest new project-name
 ```
 
-- Node.js
+- [Node.js v16.14.2](https://nodejs.org/en/)
 
-[Node.js](https://nodejs.org/en/) (`^12.22.0`, `^14.17.0`, or `>=16.0.0`) built with SSL support. (If you are using an official Node.js distribution, SSL is always built in.)
+[Node.js](https://nodejs.org/en/) (`v16.14.2`) built with SSL support. (If you are using an official Node.js distribution, SSL is always built in.)
 
 # Installation
 
