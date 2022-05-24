@@ -25,59 +25,26 @@ npm uninstall eslint
 npm install eslint --save-dev
 ```
 
+# Installation
+
+Install the following packages:
+
+- [eslint-plugin-react@^7.28.0](https://github.com/jsx-eslint/eslint-plugin-react)
+- [@typescript-eslint/eslint-plugin@latest](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)
+- [eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0](https://github.com/airbnb/javascript)
+- [eslint-plugin-import@^2.25.3](https://github.com/import-js/eslint-plugin-import)
+- [eslint-plugin-jsx-a11y@^6.5.1](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
+- [eslint-plugin-react-hooks@^4.3.0](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
+- [@typescript-eslint/parser@latest](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)
+- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native)
+
+```sh
+npm i eslint-plugin-react@^7.28.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0 eslint-plugin-import@^2.25.3 eslint-plugin-jsx-a11y@^6.5.1 eslint-plugin-react-hooks@^4.3.0 @typescript-eslint/parser@latest eslint-plugin-react-native
+```
+
 # Configure ESLint
 
-Run the command below in project root folder to initialize ESLint to your workspace.
-
-```sh
-npx eslint --init
-```
-
-On Configuring the above command it will ask you a few questions via CLI. Here’s a list of them, and the answers we’ll need to choose (✔ and ❯ symbols indicate the selected answers):
-
-<img width="723" alt="Configuration-1 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-1.png">
-
-On selecting `To check syntax, find problems, and enforce code style ` it'll check style and fix it automatically.
-
-<img width="719" alt="Configuration-2 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-2.png">
-
-Select `JavaScript modules (import/export) ` to go next
-
-<img width="721" alt="Configuration-3 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-3.png">
-
-React Native is based on React, so select `React`.
-
-<img width="722" alt="Configuration-4 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-4.png">
-
-Choose your project configuration and procced, In this project I am using JavaScript, so I selected N to configure ESLint.
-
-<img width="722" alt="Configuration-5 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-5.png">
-
-React Native is not run on the browser, so select only `Node`.
-
-<img width="914" alt="Configuration-6 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-6.png">
-
-This question is what style you want to implement via ESLint. I selected `Use a popular style guide option ` to use some standard syles.
-
-<img width="913" alt="Configuration-7 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-7.png">
-
-Since the airbnb style guide are quite popular and reasonable, stick with them as much as possible we'll rely on Airbnb's JavaScript style guide here.
-
-<img width="715" alt="Configuration-8 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-8.png">
-
-This question is about what file you want to save ESLint settings. .eslintrc.js file exists already in React Native, so select `JavaScript` to overwrite it.
-
-<img width="917" alt="Configuration-9 Image" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/Config-9.png">
-
-In the final prompt ESLint will ask you to install all the necessary dependencies. Select "Yes" and hit enter.
-
-As a result, you’ll end up having a .eslintrc.json file in the root of your project and install React Native specific rules
-
-```sh
-npm install --save-dev eslint-plugin-react-native
-```
-
-Open `.eslintrc.js` file and modify it like the below configuration.
+React Native comes with a predefined .eslintrc.js file in the root folder of your project, Open `.eslintrc.js` file and modify it like the below configuration.
 
 ```js
 module.exports = {
