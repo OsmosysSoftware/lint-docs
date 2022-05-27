@@ -29,17 +29,17 @@ npm install eslint --save-dev
 
 Install the following packages:
 
-- [eslint-plugin-react@^7.28.0](https://github.com/jsx-eslint/eslint-plugin-react)
+- [eslint-plugin-react@latest](https://github.com/jsx-eslint/eslint-plugin-react)
 - [@typescript-eslint/eslint-plugin@latest](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)
-- [eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0](https://github.com/airbnb/javascript)
-- [eslint-plugin-import@^2.25.3](https://github.com/import-js/eslint-plugin-import)
-- [eslint-plugin-jsx-a11y@^6.5.1](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
-- [eslint-plugin-react-hooks@^4.3.0](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
+- [eslint-config-standard@latest](https://github.com/standard/eslint-config-standard)
+- [eslint-plugin-import@^2.25.2](https://github.com/import-js/eslint-plugin-import)
+- [eslint-plugin-n@^15.0.0 ](https://github.com/github/eslint-plugin-github)
+- [eslint-plugin-promise@^6.0.0 ](https://github.com/xjamundx/eslint-plugin-promise)
 - [@typescript-eslint/parser@latest](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)
 - [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native)
 
 ```sh
-npm i eslint-plugin-react@^7.28.0 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0 eslint-plugin-import@^2.25.3 eslint-plugin-jsx-a11y@^6.5.1 eslint-plugin-react-hooks@^4.3.0 @typescript-eslint/parser@latest eslint-plugin-react-native
+npm i eslint-plugin-react@latest, @typescript-eslint/eslint-plugin@latest, eslint-config-standard@latest, eslint@^8.0.1, eslint-plugin-import@^2.25.2, eslint-plugin-n@^15.0.0, eslint-plugin-promise@^6.0.0, @typescript-eslint/parser@latest eslint-plugin-react-native
 ```
 
 # Configure ESLint
@@ -53,7 +53,8 @@ module.exports = {
     es2021: true,
     "react-native/react-native": true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "airbnb/hooks"],
+  extends: ["plugin:react/recommended", "standard"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -63,6 +64,7 @@ module.exports = {
   },
   plugins: ["react", "react-native"],
   rules: {
+    // allow .js files to contain JSX code
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
   },
 };
