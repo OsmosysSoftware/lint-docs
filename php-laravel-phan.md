@@ -121,10 +121,7 @@ return [
 		'PhanUnusedProtectedMethodParameter',
 		'PhanUnusedPrivateMethodParameter',
 		// Allow unused values in foreach
-		'PhanUnusedVariableValueOfForeachWithKey',
-		// FIXME: This should be fixed and removed, we should not swallow
-		// exception or handle specific exceptions.
-		'PhanUnusedVariableCaughtException'
+		'PhanUnusedVariableValueOfForeachWithKey'		
 	],
 	// Backwards Compatibility Checking
 	// (Disable this if the application no longer supports php 5,
