@@ -74,16 +74,16 @@ module.exports = {
 
 Add below scripts in your package.json to run lint on all files including .js and .tsx ones and to fix them.
 
-```sh
+```
 {
-  ...
   "scripts": {
-    ...
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./"
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./"
-    ...
   },
-  ...
 }
 ```
 
@@ -101,7 +101,9 @@ If the error messages are still shown up, open the source code and modify it to 
 
 If you use VSCode, Use ESLint Extension to have the eslint information real-time in you VSCode Editor and when you save files, files are automatically fixed by ESLint rules like you execute `npm run lint:fix`
 
-<img width="502" alt="ESlint-Extension" src="https://raw.githubusercontent.com/RaviTejaKoduru/lint-docs/main/ESLint.png">
+<img width="502" alt="ESlint-Extension" src="assets/ESLint.png">
+
+
 
 Once you install the ESLint extention, this plugin needs a bit further configuration. Open the VSCode settings and add the following configuration.
 
@@ -112,7 +114,6 @@ Once you install the ESLint extention, this plugin needs a bit further configura
     "typescript",
     "typescriptreact"
 ]
-}
 ```
 
 # Done
