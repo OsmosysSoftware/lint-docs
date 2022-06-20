@@ -72,7 +72,7 @@ module.exports = {
 
 # Usage
 
-Add below scripts in your package.json to run lint on all files including .js and .tsx ones and to fix them.
+Add below scripts in your `package.json` to run lint on all files including .js and .tsx ones and to fix them.
 
 ```
 {
