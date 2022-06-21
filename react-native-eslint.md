@@ -39,7 +39,7 @@ Install the following packages:
 - [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native)
 
 ```sh
-npm i eslint-plugin-react@latest, @typescript-eslint/eslint-plugin@latest, eslint-config-standard@latest, eslint@^8.0.1, eslint-plugin-import@^2.25.2, eslint-plugin-n@^15.0.0, eslint-plugin-promise@^6.0.0, @typescript-eslint/parser@latest eslint-plugin-react-native
+npm i -D eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 @typescript-eslint/parser@latest
 ```
 
 # Configure ESLint
