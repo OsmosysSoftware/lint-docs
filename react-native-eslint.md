@@ -44,7 +44,7 @@ npm i eslint-plugin-react@latest, @typescript-eslint/eslint-plugin@latest, eslin
 
 # Configure ESLint
 
-React Native comes with a predefined .eslintrc.js file in the root folder of your project, Open `.eslintrc.js` file and modify it like the below configuration.
+React Native comes with a predefined `.eslintrc.js` file in the root folder of your project, Open `.eslintrc.js` file and modify it like the below configuration.
 
 ```js
 module.exports = {
@@ -102,8 +102,6 @@ If the error messages are still shown up, open the source code and modify it to 
 If you use VSCode, Use ESLint Extension to have the eslint information real-time in you VSCode Editor and when you save files, files are automatically fixed by ESLint rules like you execute `npm run lint:fix`
 
 <img width="502" alt="ESlint-Extension" src="assets/ESLint.png">
-
-
 
 Once you install the ESLint extention, this plugin needs a bit further configuration. Open the VSCode settings and add the following configuration.
 
