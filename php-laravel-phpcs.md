@@ -61,8 +61,10 @@ Then add the below configuration in this file.
 	<arg name="tab-width" value="4"/>
 	<rule ref="PSR12">
 		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+        <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock"/>
 	</rule>
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <rule ref="Generic.PHP.RequireStrictTypes" />
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
 		<properties>
 			<property name="indent" value="4"/>
@@ -97,12 +99,6 @@ Then add the below configuration in this file.
 			<property name="maxLinesCountBeforeWithoutComment" value="0"/>
 		</properties>
 	</rule>
-	<rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
-		<properties>
-			<property name="linesCountBeforeFirst" value="1"/>
-			<property name="linesCountAfterLast" value="1"/>
-		</properties>
-	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
 		<properties>
 			<property name="searchAnnotations" value="true"/>
@@ -120,6 +116,9 @@ Then add the below configuration in this file.
 	<rule ref="SlevomatCodingStandard.Commenting.RequireOneLineDocComment" />
 	<rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn" />
 	<rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator" />
+
+    <!-- disable useless function comment -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment" />
 </ruleset>
 ```
 
@@ -130,8 +129,8 @@ Add couple of script commands to run `phpcs` and `phpcbf` in `composer.json` fil
 ```json
 "scripts": {
     // ..<existing scripts>
-    "lint": "phpcs",
-    "lint:fix": "phpcbf",
+    "lint": "vendor/bin/phpcs --standard=.phpcs.xml",
+    "lint:fix": "vendor/bin/phpcbf --standard=.phpcs.xml",
   },
 ```
 
