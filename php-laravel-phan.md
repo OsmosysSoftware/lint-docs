@@ -58,6 +58,10 @@ return [
     //
     // Thus, both first-party and third-party code being used by
     // your application should be included in this list.
+    
+    // Note - Keep adding to the vendor section below as we add more dependencies
+    // based on the errors you encounter when you run phan. 
+    
     'directory_list' => [
         'app',
         'config',
@@ -68,7 +72,14 @@ return [
         'storage',
         'tests',
         'bootstrap',
-        'vendor/symfony/console',
+        'vendor/laravel',
+        'vendor/fakerphp'
+        'vendor/fruitcake',
+        'vendor/monolog',
+        'vendor/nesbot',
+        'vendor/ramsey',
+        'vendor/psr'
+        'vendor/symfony',        
     ],
 
     // A directory list that defines files that will be excluded
@@ -83,7 +94,7 @@ return [
     //       should be added to the `directory_list` as
     //       to `exclude_analysis_directory_list`.
     "exclude_analysis_directory_list" => [
-        'vendor/'
+        'vendor'
     ],
 
     // A list of plugin files to execute.
