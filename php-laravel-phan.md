@@ -152,7 +152,7 @@ Add script command to run `phan` in `composer.json` file.
 ```json
 "scripts": {
     // ..<existing scripts>
-    "phan": "phan",
+    "phan": "vendor/bin/phan --config-file .phan/config.php",
   },
 ```
 
